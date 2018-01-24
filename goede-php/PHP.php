@@ -14,7 +14,7 @@
         echo "Goede avond, het is $tijd uur";
         echo '<link rel="stylesheet" type="text/css" href="CSS3.css">';
     }
-    else ($tijd >= 0 && ($tijd < 6)){
+    elseif ($tijd >= 0 && ($tijd < 6)){
         echo "Goede nacht, het is $tijd uur";
         echo '<link rel="stylesheet" type="text/css" href="CSS4.css">';
     }
