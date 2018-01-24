@@ -1,0 +1,68 @@
+body{
+    color: white;
+    text-align: center;
+    font-size: 150px;
+    z-index: 1;
+    overflow:hidden;
+}
+
+.morning{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("morning.png");
+    z-index: -1;
+    position: fixed;
+}
+
+.afternoon{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("afternoon.png");
+    z-index: -1;
+    position: fixed;
+}
+
+.evening{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("evening.png");
+    z-index: -1;
+    position: fixed;
+}
+
+.night{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("night.png");
+    z-index: -1;
+    position: fixed;
+}
+
+#plane{
+    z-index: 2;
+    margin-top: 10%;
+    margin-left: -10%;
+    height: 200px;
+    width: 200px;
+    animation-name: plane;
+    animation-duration: 5s;
+    opacity: 0;
+}
+
+@keyframes plane {
+    from {
+        opacity: 1;
+        margin-left: -10%;
+        }
+    to {margin-left: 110%;
+        opacity: 1;
+        }
+}
