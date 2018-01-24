@@ -6,15 +6,15 @@
         echo "Goede morgen, het is $tijd uur";
         echo '<link rel="stylesheet" type="text/css" href="CSS.css">';
     }
-    elseif ($tijd > 12 && ($tijd < 18)){
+    elseif ($tijd >= 12 && ($tijd < 18)){
         echo "Goede middag, het is $tijd uur";
         echo '<link rel="stylesheet" type="text/css" href="CSS2.css">';
     }
-    elseif ($tijd > 18 && ($tijd < 0)){
+    elseif ($tijd >= 18 && ($tijd < 0)){
         echo "Goede avond, het is $tijd uur";
         echo '<link rel="stylesheet" type="text/css" href="CSS3.css">';
     }
-    elseif ($tijd > 0 && ($tijd < 6)){
+    else ($tijd >= 0 && ($tijd < 6)){
         echo "Goede nacht, het is $tijd uur";
         echo '<link rel="stylesheet" type="text/css" href="CSS4.css">';
     }
@@ -27,6 +27,5 @@
     <title>Title</title>
 </head>
 <body>
-
 </body>
 </html>
