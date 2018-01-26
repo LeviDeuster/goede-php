@@ -15,12 +15,12 @@
         echo "<div class='afternoon'></div>";
         echo $plane;
     }
-    elseif ($tijd >= 18 && ($tijd < 0)){
+    elseif ($tijd >= 18 && ($tijd < 24)){
         echo "Goede avond, het is $tijd uur";
         echo "<div class='evening'></div>";
         echo $plane;
     }
-    elseif ($tijd >= 0 && ($tijd < 6)){
+    elseif ($tijd >= 24 && ($tijd < 6)){
         echo "Goede nacht, het is $tijd uur";
         echo "<div class='night'></div>";
         echo "<img id='plane' src='ufo.png'>";
